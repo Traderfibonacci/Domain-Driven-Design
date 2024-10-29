@@ -11,9 +11,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public record DadosCadastroEvento(
-        @NotNull(message = "A categoria do evento é obrigatória!")
+        @NotNull(message = "A categoria do evento é obrigatória.")
         Categoria categoria,
-        @NotBlank(message = "A descrição do evento é obrigatória!")
+        @NotBlank(message = "A descrição do evento é obrigatória.")
         String descricao,
         @NotNull(message = "O endereço do evento é obrigatório!")
         @Valid
